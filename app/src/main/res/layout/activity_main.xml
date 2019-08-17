@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8EAF6"
+    tools:context="MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="115dp"
+        android:background="@drawable/click_button2"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:text="@string/app"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <ListView
+        android:id="@+id/list1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn"
+        android:background="#E8EAF6"
+        android:paddingTop="10dp"
+
+        >
+
+    </ListView>
+
+
+
+
+</RelativeLayout>

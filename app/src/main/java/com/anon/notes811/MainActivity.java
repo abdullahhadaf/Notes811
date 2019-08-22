@@ -1,6 +1,7 @@
 package com.anon.notes811;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         db = new MyHelper(this);
 
         button = (Button) findViewById(R.id.btn);
-
+button.setTypeface(Typeface.createFromAsset(getAssets(),"NotoNaskhArabic-Bold.ttf"));
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
 
         ContactAdapter adapter=new ContactAdapter(this,contacts);
         listView.setAdapter(adapter);
-
     }
 
 }

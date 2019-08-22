@@ -1,6 +1,7 @@
 package com.anon.notes811;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -13,6 +14,8 @@ import android.widget.ImageButton;
 
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.EmptyStackException;
 
 
 public class AddActivity extends AppCompatActivity {
@@ -28,6 +31,7 @@ public class AddActivity extends AppCompatActivity {
    sendJAVA=(TextView)findViewById(R.id.sendXML);
    aboutJAVA=(TextView)findViewById(R.id.aboutXML);
    noteJAVA=(EditText)findViewById(R.id.noteXML);
+sendJAVA.setTypeface(Typeface.createFromAsset(getAssets(),"NotoNaskhArabic-Bold.ttf"));
            db = new MyHelper(this);
         sendJAVA.setOnClickListener(new View.OnClickListener() {
             private int id;

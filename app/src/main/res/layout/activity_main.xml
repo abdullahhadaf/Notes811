@@ -20,7 +20,7 @@
         android:background="@drawable/click_button2"
         android:paddingTop="1dp"
         android:paddingBottom="1dp"
-        android:text="@string/app"
+        android:text="@string/App"
         android:textAllCaps="false"
         android:textColor="@color/colorText"
         android:textSize="20dp"
@@ -35,7 +35,6 @@
         android:layout_above="@id/btn"
         android:background="#E8EAF6"
         android:paddingTop="10dp"
-
         >
 
     </ListView>

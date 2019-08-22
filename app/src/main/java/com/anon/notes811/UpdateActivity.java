@@ -3,6 +3,7 @@ package com.anon.notes811;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -29,7 +30,7 @@ public class UpdateActivity extends AppCompatActivity {
 
         edit1=findViewById(R.id.editname);
         TextViewJAVA =findViewById(R.id.textView2XML);
-
+TextViewJAVA.setTypeface(Typeface.createFromAsset(getAssets(),"NotoNaskhArabic-Bold.ttf"));
 
 
         id=getIntent().getIntExtra("id",0);
